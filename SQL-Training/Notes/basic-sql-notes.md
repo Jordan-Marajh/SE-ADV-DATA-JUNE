@@ -14,7 +14,7 @@ Here, I noticed there was a Customers table, so I used the following command to 
 SELECT TOP 10 * FROM Customers;
 ```
 
-![customers preview](Images/customers-table-preview.png)
+![customers preview](/Images/customers-table-preview.png)
 
 Once I took a look at the table, the solution was fairly simple to write.
 
