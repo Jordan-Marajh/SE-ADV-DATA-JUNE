@@ -14,6 +14,8 @@ Here, I noticed there was a `Customers` table, so I used the following command t
 SELECT TOP 10 * FROM Customers;
 ```
 
+*Expected output:*
+
 ![Customers table preview](/Images/SQL-Training-Images/Basic-SQL-Queries/customers-table-preview.png)
 
 Once I took a look at the table, the solution was fairly simple to write.
@@ -23,6 +25,8 @@ SELECT *
 FROM Customers
 WHERE Country = 'Germany';
 ```
+
+*Expected output:*
 
 ![Problem 1 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-01-output.png)
 
@@ -36,6 +40,8 @@ For this problem, I used the `Products` table. I first checked the structure of 
 SELECT TOP 10 * FROM Products;
 ```
 
+*Expected output:*
+
 ![Products table preview](/Images/SQL-Training-Images/Basic-SQL-Queries/products-table-preview.png)
 
 The relevant column is `UnitPrice`, so I filtered the table to show only products with a unit price greater than 20 using a `WHERE` statement.
@@ -45,6 +51,8 @@ SELECT *
 FROM Products
 WHERE UnitPrice > 20;
 ```
+
+*Expected output:*
 
 ![Problem 2 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-02-output.png)
 
@@ -58,6 +66,8 @@ For this problem, the relevant table is `Employees`. I first checked the structu
 SELECT TOP 10 * FROM Employees;
 ```
 
+*Expected output:*
+
 ![Employees table preview](/Images/SQL-Training-Images/Basic-SQL-Queries/employees-table-preview.png)
 
 The table contains the columns `FirstName`, `LastName` and `City`, which are exactly the columns needed for this problem.
@@ -66,6 +76,8 @@ The table contains the columns `FirstName`, `LastName` and `City`, which are exa
 SELECT FirstName, LastName, City
 FROM Employees;
 ```
+
+*Expected output:*
 
 ![Problem 3 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-03-output.png)
 
@@ -81,6 +93,8 @@ FROM Products
 WHERE UnitsInStock = 0;
 ```
 
+*Expected output:*
+
 ![Problem 4 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-04-output.png)
 
 ---
@@ -93,6 +107,8 @@ Here, I used the `Orders` table. I first checked the structure of the table usin
 SELECT TOP 10 * FROM Orders;
 ```
 
+*Expected output:*
+
 ![Orders table preview](/Images/SQL-Training-Images/Basic-SQL-Queries/orders-table-preview.png)
 
 The relevant column is `ShipCountry`, which tells us where each order was shipped.
@@ -102,6 +118,8 @@ SELECT *
 FROM Orders
 WHERE ShipCountry = 'France';
 ```
+
+*Expected output:*
 
 ![Problem 5 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-05-output.png)
 
@@ -116,6 +134,8 @@ SELECT *
 FROM Customers
 WHERE City LIKE 'B%';
 ```
+
+*Expected output:*
 
 ![Problem 6 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-06-output.png)
 
@@ -134,6 +154,8 @@ WHERE QuantityPerUnit LIKE '%jar%'
    OR QuantityPerUnit LIKE '%bottle%';
 ```
 
+*Expected output:*
+
 ![Problem 7 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-07-output.png)
 
 Here, `%jar%` means that the word `jar` can appear anywhere in the text. Similarly, `%bottle%` means that the word `bottle` can appear anywhere in the text.
@@ -149,6 +171,8 @@ SELECT *
 FROM Employees
 WHERE BirthDate > '1960-12-31';
 ```
+
+*Expected output:*
 
 ![Problem 8 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-08-output.png)
 
@@ -166,6 +190,8 @@ FROM Products
 ORDER BY UnitPrice DESC;
 ```
 
+*Expected output:*
+
 ![Problem 9 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-09-output.png)
 
 Here, `DESC` means descending order, so the most expensive products appear first.
@@ -181,6 +207,8 @@ SELECT CompanyName, ContactName
 FROM Customers
 WHERE City IN ('London', 'Madrid');
 ```
+
+*Expected output:*
 
 ![Problem 10 output](/Images/SQL-Training-Images/Basic-SQL-Queries/problem-10-output.png)
 
