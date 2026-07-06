@@ -2,7 +2,7 @@
 
 Here I'll be writing my solutions to problems regarding Northwind DB. They're split into three sections: Aggregations, Subqueries and Bonus problems.
 
-## Aggregations
+## Aggregations exercises
 
 ### 1. Orders per customer
 
@@ -168,7 +168,7 @@ SELECT
 
 ![Problem 9 output](/Images/SQL-Training-Images/Aggregations-and-subqueries/agg-problem-09-output.png)
 
-## Subqueries
+## Subqueries exercises
 
 
 
